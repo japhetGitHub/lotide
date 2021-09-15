@@ -24,7 +24,7 @@ const countLetters = function(sentence) {
   return letters;
 };
 
-// console.log(countLetters("lighthouse in the house"));
+// Test Cases
 const result = countLetters("Hello LHL World");
 assertEqual(result["e"], 1);
 assertEqual(result["l"], 3);
@@ -34,4 +34,3 @@ assertEqual(result["d"], 1);
 assertEqual(result["H"], 2);
 assertEqual(result["L"], 2);
 assertEqual(result["W"], 1);
-
