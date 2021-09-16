@@ -20,18 +20,18 @@ const assertArraysEqual = function(actual, expected) {
 
 const letterPositions = function(sentence) {
   const results = {};
-  // logic to update results here
 
   for (let index = 0; index < sentence.length; index++) {
     if (results[sentence[index]]) {
       results[sentence[index]].push(index);
-    } else {
+    } else if (sentence[index] !== " ") {
       results[sentence[index]] = [index];
     }
   }
   return results;
 };
 
+// Test Cases
 const posResults = letterPositions("lighthouse in the house");
 assertArraysEqual(posResults.h, [3, 5, 15, 18]);
 assertArraysEqual(posResults.l, [0]);
