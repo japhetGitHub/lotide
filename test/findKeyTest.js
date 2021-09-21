@@ -27,5 +27,5 @@ describe("#findKey", () => {
     };
     const callback = x => x.stars === 10;
     assert.isUndefined(findKey(inputObj, callback));
-  })
+  });
 });
