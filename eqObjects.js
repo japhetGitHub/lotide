@@ -1,5 +1,3 @@
-const assertEqual = require('./assertEqual');
-
 const eqArrays = require('./eqArrays');
 
 // Returns true if both objects have identical keys with identical values.
